@@ -16,9 +16,6 @@ function datehax() {
     return "" + montharray[month] + " " + daym + ", " + year + "";
 }
 
-
-
-
 (function (window, location) {
     var redirect = "http://go.pixelwort.com/ts7951-backbutton-survey-ww";
     var currentUrl = location.origin + location.pathname + location.search;
