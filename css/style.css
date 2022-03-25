@@ -11536,6 +11536,15 @@ header.masthead .masthead-heading {
   }
 }
 
+@media (min-width: 1920px) {
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 0rem;
+  }
+}
+
 
 #portfolio .portfolio-item {
   max-width: 26rem;
