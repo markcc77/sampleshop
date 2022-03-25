@@ -11531,10 +11531,11 @@ header.masthead .masthead-heading {
     transform: translate(0px, 20%);
   }
   header.masthead .product-review img{
-    width: 100px;
+    width: 100%;
     height: auto;
   }
 }
+
 
 #portfolio .portfolio-item {
   max-width: 26rem;
