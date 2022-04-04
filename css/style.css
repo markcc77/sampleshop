@@ -243,11 +243,11 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: var(--bs-head-shrink-bebg);
   text-decoration: underline;
 }
 a:hover {
-  color: #cca000;
+  color: var(--bs-head-shrink-upbg);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7906,7 +7906,11 @@ p {
 
 
 .page-section {
-  padding: 2rem 0;
+  margin-top: -4rem;
+  padding: 3rem 0 1rem 0;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background-color: #fff;
 }
 
 .page-section h2.section-heading, .page-section .section-heading.h2 {
@@ -7922,24 +7926,13 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   section {
     padding: 7rem 0;
   }
-  @media (min-width: 768px) {
-    .page-section {
-      padding: 4rem 0;
-    }
-  }
-  @media (min-width: 1300px) {
-    .page-section {
-      padding: 0 0 5rem 0;
-    }
-  }
-  @media (min-width: 1300px) {
-    .page-section {
-      padding: 0 0 5rem 0;
-    }
+  .page-section {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
 }
 
@@ -8056,7 +8049,6 @@ p {
 
 header.masthead .product-review{
     bottom:0; 
-    transform: translate(0px, 8rem);
     max-height: fit-content;
     position: relative;
 }
@@ -8073,11 +8065,10 @@ header.masthead .mast-imgbox{
 header.masthead .mast-img{
     width: 100%;
     height: auto;
-    margin-bottom: -5px;
 }
 
 header.masthead {
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom:0rem;
   text-align: center;
   color: #fff;
@@ -8105,7 +8096,7 @@ header.masthead .masthead-heading {
 
 @media (max-width: 768px) {
   header.masthead {
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom:0rem;
   }
   header.masthead .masthead-subheading {
@@ -8124,7 +8115,6 @@ header.masthead .masthead-heading {
     position: relative;
     width: 100%;
     max-height: fit-content;
-    transform: translate(0px, 20%);
   }
   header.masthead .product-review img{
     width: 100%;
@@ -8134,8 +8124,11 @@ header.masthead .masthead-heading {
 
 .content-1{
   max-width: 800px;
-  padding: 0 1rem 0 1rem;
-  margin: auto;
+  padding: 0 1rem 1rem 1rem;
+  margin: 1.5rem auto 0 auto;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 100px #dddddd;
+  border-radius: 5px;
 }
 
 
@@ -8224,12 +8217,4 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
-
-
-
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 
