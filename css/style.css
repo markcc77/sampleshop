@@ -11327,7 +11327,7 @@ p {
 
 
 .page-section {
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .page-section h2.section-heading, .page-section .section-heading.h2 {
@@ -11349,7 +11349,7 @@ p {
   }
 
   .page-section {
-    padding: 7rem 0;
+    padding: 0 0 2rem 0;
   }
 }
 
@@ -11531,7 +11531,7 @@ header.masthead .masthead-heading {
     transform: translate(0px, 20%);
   }
   header.masthead .product-review img{
-    width: 100%;
+    max-width: 800px;
     height: auto;
   }
 }

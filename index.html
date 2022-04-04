@@ -8,8 +8,10 @@
 
     <title>Survey Rewards</title>
 
-    <link rel="stylesheet" href="./css/bs/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/survey.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/surveyanimate.css">
@@ -58,23 +60,27 @@
     <section class="page-section" id="services">
         <div class="container">
 
-            <div class="content-1">
-                <div class="text-center">
-                    <h2 class="my-3 text-uppercase">Congratulations!</h2>
-                    <h3 class="section-subheading text-muted">
-                        You've been chosen to receive a brand new
-                        <b>Craftsman Tool Cabinet!</b>
-                        To claim, simply answer a few quick questions regarding your experience with us.
-                        <br /><br />
-                        <span style="color: red; font-weight: bold;">Attention:</span>
-                        This survey offer expires today,
-                        <script>document.write(datehax());</script>.
-                    </h3>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-primary continue">START SURVEY</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-1">
+                        <div class="text-center">
+                            <h2 class="my-3 text-uppercase">Congratulations!</h2>
+                            <h3 class="section-subheading text-muted">
+                                You've been chosen to receive a brand new
+                                <b>Craftsman Tool Cabinet!</b>
+                                To claim, simply answer a few quick questions regarding your experience with us.
+                                <br /><br />
+                                <span style="color: red; font-weight: bold;">Attention:</span>
+                                This survey offer expires today,
+                                <script>document.write(datehax());</script>.
+                            </h3>
+                        </div>
+    
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary continue">START SURVEY</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,8 +245,11 @@
                             </button>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </section>
 
@@ -249,13 +258,24 @@
     <section id="comments" class="comment-page">
         <div class="com_cont">
             <h2><i class="fa fa-comment"></i> Recent Comments: </h2>
-            <div id="top-bar" class="text-right">
-                <!-- <img src=".." width="35" alt="" class="vert" /> -->
-                <input type="text" name="comment" placeholder="Write a comment..." class="vert" >
-                <p class="vert"><i class="fa fa-camera"></i> </p>
-                <a href="#" class="vert" > Publish</a>
-                <br/>
+            <div class="write-co-con-col">
+                <div class="write-co-con-text">
+                    <div class="Icon-inside">
+                        <input class="input-write-co" type="text" placeholder="Write a comment...">
+                        <i id="hide" class="col-lg-8 col-xs-8">
+                            <label class="hand-cursor">
+                                <input type="file" nv-file-select uploader="$ctrl.uploader"/>
+                                <span class="fa fa-camera fa-lg"></span>
+                            </label>
+                        </i>
+                    </div>
+                </div>
+                <div class="write-co-con-btn">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Publish</button>
+                </div>
             </div>
+            
+            
             <div class="comment_row clearfix com2">
                 <div class="inf_user">
                     <div class="user_img"><img src="./img/1.jpg" alt=""></div>
@@ -381,21 +401,25 @@
     </section>
 
     <div class="footer">
-        <br /><br /><br /><br />
-        <img src="./img/f_guarantee.png" alt="guarantee" height="50" width="auto" /> <img src="./img/f_secure_1.png"
-            alt="secureSiteLogo" height="50" width="auto" />
-        <p class="copyright">Copyright © 2021</p>
-        <div class="claim">
-            <div class="col">
-                <p>THIS IS AN INDEPENDENT SURVEY. This website is not affiliated with or endorsed by Best Buy and does not
-                claim to represent or own any of the trademarks, trade names or rights associated with any of the products
-                which are the property of their respective owners who do not own, endorse, or promote this website.<br/> *Products
-                offered on the last page require shipping and handling fees. See manufacturer's site for details as terms
-                vary with offers.<br/> See important terms and conditions regarding this survey, website and advertisement by clicking
-                <a id="terms-link" style="text-decoration: none;" href="#">here</a>. *Important: Shipping costs may apply</div>p>
+        <div class="content-1">
+            <br /><br /><br /><br />
+            <img src="./img/f_guarantee.png" alt="guarantee" height="50" width="auto" /> <img src="./img/f_secure_1.png"
+                alt="secureSiteLogo" height="50" width="auto" />
+            <p class="copyright">Copyright © 2021</p>
+            <div class="claim">
+                <div class="col">
+                    <p>THIS IS AN INDEPENDENT SURVEY. This website is not affiliated with or endorsed by Best Buy and does not
+                    claim to represent or own any of the trademarks, trade names or rights associated with any of the products
+                    which are the property of their respective owners who do not own, endorse, or promote this website. *Products
+                    offered on the last page require shipping and handling fees. See manufacturer's site for details as terms
+                    vary with offers. See important terms and conditions regarding this survey, website and advertisement by clicking
+                    <a id="terms-link" style="text-decoration: none;" href="#">here</a>. *Important: Shipping costs may apply.</p>
+                    <br/>
+                </div>
             </div>
         </div>
     </div>
+    
 
     <div class="bottom-bar">
         <div class="container">
@@ -417,8 +441,8 @@
                     <h5 class="modal-title" id="staticBackdropLabel">
                         <img alt="image" src="./img/logo.png" height="60" />
                     </h5>
-                    <button type="button" class="close btn-mod-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="fa fa-times fa-lg text-danger"></i>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -499,8 +523,8 @@
                     <h5 class="modal-title" id="staticBackdropLabel">
                         <img alt="image" src="./img/logo.png" height="60" />
                     </h5>
-                    <button type="button" class="close btn-mod-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="fa fa-times fa-lg text-danger"></i>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -519,7 +543,6 @@
         </div>
     </div>
     
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bs/bootstrap.min.js"></script>
     <script src="./js/navbar.js"></script>
