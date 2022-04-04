@@ -67,6 +67,10 @@
     .choices .answerOption {
         width: 90%;
     }
+
+    .choices{
+        background:no-repeat top/24rem url("../img/questionbg.png"),#f7f7f7;
+    }
 }
 
 
