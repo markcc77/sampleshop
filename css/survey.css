@@ -20,10 +20,10 @@
 .choices{
     padding: 0 0 1rem 0;
     border-radius: 5px;
-    border: 2px solid var(--bs-btn-bg);
+    /* border: 2px solid var(--bs-btn-bg); */
     max-width: 800px;
     margin: 1rem auto 0 auto;
-    background:no-repeat top/46% url("../img/questionbg.png"),#f7f7f7;
+    background:no-repeat top/18rem url("../img/questionbg.png"),#f3f3f3;
 
 }
 
@@ -70,7 +70,7 @@
     }
 
     .choices{
-        background:no-repeat top/24rem url("../img/questionbg.png"),#ffffff;
+        background:no-repeat top/18rem url("../img/questionbg.png"),#ffffff;
     }
 }
 
