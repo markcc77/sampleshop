@@ -62,6 +62,7 @@ function nextQuestion(a) {
     case 9:
       (document.getElementsByClassName("question")[0].style.display = "none"),
         (document.getElementsByClassName("choices")[0].style.display = "none"),
+        (document.getElementsByClassName("hr-page")[0].style.display = "none"),
         (document.getElementsByClassName("comment-page")[0].style.display = "none"),
         (document.getElementsByClassName("footer")[0].style.display = "none"),
         (h.className += " load"),
@@ -106,6 +107,7 @@ function nextQuestion(a) {
             (k.innerHTML="<button type='button' class='btn btn-primary' data-dismiss='modal'>Proceed</button>"),
             (bm.innerHTML="<p style='color:black; font-size:16px;'>Because you helped provide extremely valuable consumer data, you may now choose some of the following exclusive rewards.<br/><br/>Please note that if you leave this page without claiming your reward, we have no choice but to give another visitor a chance to participate in our rewards program.</p>"),
             (document.getElementsByClassName("reward-page")[0].style.display = "block"),
+            (document.getElementsByClassName("hr-page")[0].style.display = "none"),
             (document.getElementsByClassName("comment-page")[0].style.display = "block"),
             (document.getElementsByClassName("footer")[0].style.display = "block");
         }, 7e3);

@@ -7907,7 +7907,7 @@ p {
 
 .page-section {
   margin-top: -4rem;
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 1.5rem 0;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   background-color: #fff;
@@ -7927,9 +7927,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  section {
-    padding: 7rem 0;
-  }
   .page-section {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -8124,11 +8121,15 @@ header.masthead .masthead-heading {
 
 .content-1{
   max-width: 800px;
-  padding: 0 1rem 1rem 1rem;
+  padding-bottom: 1rem;
   margin: 1.5rem auto 0 auto;
   border: 1px solid #dddddd;
   box-shadow: 0 0 100px #dddddd;
   border-radius: 5px;
+}
+
+.content-1 div{
+  padding: 0 .5rem 0 .5rem;
 }
 
 
@@ -8218,3 +8219,9 @@ header.masthead .masthead-heading {
 }
 
 
+.hr-page{
+  background-color: #cfcfcf;
+  max-width: 95%;
+  text-align: center;
+  margin: auto;
+}
