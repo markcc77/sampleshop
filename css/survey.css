@@ -364,7 +364,7 @@
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    padding: 10px 21px 0 0;
+    padding: 0 21px 0 0;
 }
 
 div.likes a {
