@@ -8114,7 +8114,7 @@ header.masthead .masthead-heading {
     max-height: fit-content;
   }
   header.masthead .product-review img{
-    width: 100%;
+    width: 75%;
     height: auto;
   }
 }
