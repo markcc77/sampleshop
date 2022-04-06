@@ -23,7 +23,7 @@
     /* border: 2px solid var(--bs-btn-bg); */
     max-width: 800px;
     border: 1px solid #dddddd;
-    box-shadow: 0 0 100px #dddddd;
+    box-shadow: 0 0 30px #dddddd;
     margin: 1.5rem auto 0 auto;
     background: no-repeat top/18rem url("../img/questionbg.png"), #fff;
 }
@@ -99,7 +99,7 @@
 .reward {
     margin-bottom: 10px;
     background-color: #fff;
-    padding: 0 1rem 0 1rem;
+    padding: .5rem 1rem 0 1rem;
     overflow: hidden;
     position: relative;
     max-width: 800px;
@@ -107,12 +107,17 @@
     transition: tranform ease-in-out;
 }
 
+.reward-text{
+    text-align: center;
+
+}
+
 .reward-page{
   max-width: 800px;
   padding: 1rem .5rem 1rem .5rem;
   margin: 1.5rem auto 0 auto;
   border: 1px solid #dddddd;
-  box-shadow: 0 0 100px #dddddd;
+  box-shadow: 0 0 30px #dddddd;
   border-radius: 5px;
 }
 
@@ -130,6 +135,10 @@
 .reward .description b {
     color: #1e4385;
     font-size: 17px;
+}
+
+.reward .description i{
+    font-size: 13px;
 }
 
 .reward .description .quantity {
@@ -161,8 +170,8 @@
 .reward button {
     width: 100%;
     text-align: center;
-    font-size: 18px;
-    height: 30px;
+    font-size: 20px;
+    height: 50px;
     padding: 0 2rem;
     text-transform: uppercase;
     box-shadow: 0 1px 0 0 var(--bs-btn-shadow);
@@ -204,11 +213,17 @@
     .reward .product-text {
         text-align: center;
     }
+    .reward button {
+        font-size: 1rem;
+    }
 
 }
 
 #outofstock {
-    opacity: .5 !important;
+    opacity: .3 !important;
+    background-color: #e4e4e4;
+    padding-bottom: .8rem;
+    
 }
 
 
@@ -400,7 +415,7 @@ div.likes a small {
     max-width: 800px;
     margin: 1.5rem auto 1.5rem auto;
     border: 1px solid #dddddd;
-    box-shadow: 0 0 100px #dddddd;
+    box-shadow: 0 0 30px #dddddd;
     border-radius: 5px;
 }
 

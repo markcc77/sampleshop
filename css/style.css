@@ -7,6 +7,7 @@
   --bs-modal-close-btn:#e9ecef;
 
   --bs-head-shrink-text:"Over $4,000,000 in Offers given out so far!";
+  --bs-head-shrink-color:#fff;
   --bs-head-shrink-upbg:#0a58ca;
   --bs-head-shrink-bebg:#0d6efd;
   --bs-head-img:/* url("../img/flash.jpg") */;
@@ -7952,8 +7953,8 @@ p {
 }
 
 #mainNav {
-  padding: .2rem 0 .2rem 0;
-  background-color: #212529;
+  padding: 0;
+  background-color: var(--bs-head-shrink-upbg);
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -7970,7 +7971,7 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 5rem;
+  height: 3.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7984,29 +7985,33 @@ p {
 
 #mainNavText{
   width: 100%;
+  font-size: 0.75rem;
+  color: var(--bs-head-shrink-color);
   background-color: var(--bs-head-shrink-bebg);
 }
 
 #mainNavLogo{
+  font-size: 0.8rem;
+  color: var(--bs-head-shrink-color);
   display: inline-block;
 }
 
 #mainNavLogo img{
-  height: 22px;
+  height: 15px;
   margin-top: -6px;
 }
 
 .head-below img{
-  width: 22px;
+  width: 10px;
 }
 
 .head-below::after {
   content: var(--bs-head-shrink-text);
 }
 
-@media (min-width: 100px) {
+@media (min-width: 768px) {
   #mainNav {
-    padding-top: .5rem;
+    padding-top: .1rem;
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
@@ -8021,7 +8026,7 @@ p {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: .3rem;
+    padding-top: .1rem;
     padding-bottom: 0rem;
     background-color: var(--bs-head-shrink-upbg);
     color: #fff;
@@ -8038,6 +8043,9 @@ p {
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
+  }
+  #mainNavLogo, #mainNavText{
+    font-size: 0.95rem;
   }
   
 }
@@ -8065,7 +8073,7 @@ header.masthead .mast-img{
 }
 
 header.masthead {
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-bottom:0rem;
   text-align: center;
   color: #fff;
@@ -8093,7 +8101,7 @@ header.masthead .masthead-heading {
 
 @media (max-width: 768px) {
   header.masthead {
-    padding-top: 6rem;
+    padding-top: 7.2rem;
     padding-bottom:0rem;
   }
   header.masthead .masthead-subheading {
